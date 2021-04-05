@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.todolistproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_app_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ToDoListProject">
+        <activity android:name=".jasleen.activities.DeleteListActivity"></activity>
+        <activity android:name=".jasleen.activities.ImportantListActivity" />
+        <activity android:name=".jasleen.activities.OnClickShowSecretListActivity" />
+        <activity android:name=".jasleen.activities.SecretListActivity" />
+        <activity android:name=".jasleen.activities.NeedHelpActivity" />
+        <activity android:name=".jasleen.activities.OnClickPartSettingActivity" />
+        <activity android:name=".jasleen.activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+<!--
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+-->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".jasleen.activities.EventActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".jasleen.activities.OnClickShowNotesActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".jasleen.activities.ListActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".jasleen.activities.GroceryListActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".jasleen.activities.SettingsActivity" />
+        <activity android:name=".jasleen.activities.HomeLandingActivity" />
+        <activity android:name=".jasleen.activities.LogInActivity" />
+        <activity android:name=".jasleen.activities.BaseFunActivity" />
+        <activity android:name="tejinder.activities.MainActivity" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+    </application>
+
+</manifest>

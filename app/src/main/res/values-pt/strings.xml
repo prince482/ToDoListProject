@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Portuguese-->
+<resources>
+    <string name = "log_btn"> Faça login </string>
+    <string name = "new_title">Criar </string>
+    <string name = "new_cancel">Cancelar </string>
+    <string name = "new_event">4. Evento </string>
+    <string name = "new_meeting">3. Agendar reunião </string>
+    <string name = "new_grocery">2. Lista de compras </string>
+    <string name = "new_simple">1. Lista </string>
+    <string name = "new_secret">5. Nota secreta </string>
+    <string name = "dialog_title">Título </string>
+    <string name = "error_message">Mensagem de erro </string>
+    <string name = "btn_ok">Ok </string>
+    <string name = "dialog_change_btn">Definir </string>
+    <string name = "next">PRÓXIMO </string>
+    <string name = "skip">SKIP </string>
+    <string name = "got_it">COMPREENDI </string>
+    <string name = "get_started">Primeiros passos </string>
+    <string name = "check_it_out">Confira </string>
+    <string name = "welcome">BEM-VINDO </string>
+    <string name = "text1"><b>Work To Do  </b> é uma lista de tarefas inteligente para uso diário. </string>
+    <string name = "text3">Recupere a clareza e a calma tirando todas essas tarefas da sua cabeça e colocando-as na sua lista de tarefas (não importa onde você esteja ou que dispositivo use). </string>
+    <string name = "text2">É realmente utilizável com uma ótima experiência do usuário. </string>
+    <string name = "feature_text1">Tarefas de agrupamento em listas de tarefas úteis </string>
+    <string name = "feature_text2">Barra de tarefas rápidas - para adicionar algo interessante rapidamente </string>
+    <string name = "feature_text3">Visualização de calendário - obtenha uma perspectiva melhor de como sua agenda está ocupada com a visualização de calendário. </string>
+    <string name = "feature_text4">Codificação de cores. Atribua cores a cada lista de tarefas para facilitar a identificação de quais listas você está visualizando
+Cada tarefa pode ter notas detalhadas e muito mais ...... </string>
+    <string name = "settings_text_select_theme">Selecione o tema: </string>
+    <string name = "settings_text_credentials">Credenciais </string>
+    <string name = "dark_theme">Tema escuro </string>
+    <string name = "light_theme">Tema claro </string>
+    <string name = "ggle_sign_btn">Continue com google </string>
+    <string name = "fb_sign_btn">Continue com o Facebook </string>
+    <string name = "log_help"><u>Precisa de ajuda? </u> </string>
+    <string name = "change_lang">Configuração de idioma </string>
+    <string name = "username">UserName </string>
+    <string name = "settings">Configurações </string>
+    <string name = "add_event">Adicionar um novo evento </string>
+    <string name="Save">Salvar</string>
+    <string name = "event_Hint">Evento: </string>
+    <string name = "name">Nome: </string>
+    <string name = "email">Email: </string>
+    <string name = "id"> ID: </string>
+    <string name = "title">Título </string>
+    <string name = "user_profile">Perfil de usuário </string>
+    <string name = "themes">Temas </string>
+    <string name = "log_out">Sair </string>
+    <string name = "body">Iniciar listagem … </string>
+    <string name = "start_listing">Iniciar listagem … </string>
+    <string name = "date">Data </string>
+    <string name = "log_head">Faça login </string>
+    <string name = "log_wlcm">Bem-vindo ao trabalho a fazer. </string>
+    <string name = "user_verification">Verificação do usuário </string>
+    <string name = "event_date">Data do evento: </string>
+    <string name = "craetion_date">Data de criação </string>
+    <string name = "problem_in_logging_with_google">Problemas ao fazer login com o Google? </string>
+    <string name = "click_here"><u>Clique aqui</u> </string>
+    <string name = "problem_in_logging_with_facebook">Problemas ao fazer login no Facebook? </string>
+    <string name = "menu_imp"> Listas importantes </string>
+    <string name = "menu_secret"> Listas secretas </string>
+    <string name = "nt_menu_imp"> Marcar como lista importante </string>
+    <string name = "nt_menu_del"> Excluir lista </string>
+    <string name = "nt_menu_share"> Lista de compartilhamento </string>
+</resources>

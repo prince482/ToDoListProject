@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Chinese-->
+<resources>
+    <string name="app_name">ToDo List Project</string>
+    <string name= "log_btn">登录</string>
+<string name ="new_title">创建</string>
+<string name ="new_cancel" >取消</string>
+<string name ="new_event">4。活动</string>
+<string name ="new_meeting">3。安排会议</string>
+<string name ="new_grocery">2。杂货清单</string>
+<string name ="new_simple">1。列表</string>
+<string name ="new_secret">5。秘密笔记</string>
+<string name ="dialog_title">标题</string>
+<string name ="error_message">错误消息</string>
+<string name ="btn_ok">确定</string>
+<string name ="dialog_change_btn">设置</string>
+<string name ="next">下一个</string>
+<string name ="skip">跳过</string>
+    <string name = "got_it">知道了</string>
+<string name ="get_started">入门</string>
+<string name ="check_it_out">签出</string>
+<string name ="welcome">欢迎</string>
+<string name ="text1"><b>Work To Do  </b>是日常使用的智能任务列表。</string>
+<string name ="text3">通过将所有这些任务从头脑中移到待办事项列表中（无论您身在何处或使用何种设备）来重新获得清晰度和平静感。</string>
+<string name ="text2">它确实可以使用，并具有出色的用户体验。 </string>
+<string name ="feature_text1">在方便的任务列表中对任务进行分组</string>
+<string name ="feature_text2">快速任务栏-快速添加热门内容</string>
+<string name ="feature_text3">日历视图-更好地了解日历视图的日程安排。 </string>
+<string name ="feature_text4">颜色编码。为每个任务列表分配颜色，以便更轻松地识别正在查看的列表
+    每个任务都有详细的注释，还有更多...... </string>
+<string name ="settings_text_select_theme">选择主题：</string>
+<string name ="settings_text_credentials">凭据</string>
+<string name ="dark_theme">黑暗主题</string>
+<string name ="light_theme">浅色主题</string>
+<string name ="ggle_sign_btn">继续使用Google </string>
+<string name ="fb_sign_btn">继续使用Facebook </string>
+<string name ="log_help"> <u>需要帮助吗？</u> </string>
+<string name ="change_lang">语言设置</string>
+<string name ="username">用户名</string>
+<string name ="settings">设置</string>
+<string name ="add_event">添加新事件</string>
+<string name ="Save">保存</string>
+<string name ="event_Hint">事件：</string>
+<string name ="name">名称：</string>
+<string name ="email">电子邮件：</string>
+<string name = "id">ID：</string>
+<string name ="title">标题</string>
+<string name ="user_profile">用户个人资料</string>
+<string name ="themes">主题</string>
+<string name ="log_out">注销</string>
+<string name ="body">正文</string>
+<string name ="start_listing">开始列表... </string>
+<string name ="date">日期</string>
+<string name ="log_head">登录</string>
+<string name ="log_wlcm">欢迎上班。</string>
+<string name ="user_verification">用户验证</string>
+<string name ="event_date">事件日期：</string>
+<string name ="craetion_date">创建日期</string>
+    <string name="problem_in_logging_with_google">使用Google登录时遇到的问题？</string>
+    <string name="click_here"><u>点击此处</u></string>
+    <string name="problem_in_logging_with_facebook">Facebook登录存在问题吗？</string>
+    <string name="menu_imp">重要列表</string>
+    <string name="menu_secret">秘密列表</string>
+    <string name="nt_menu_imp">标记为重要列表</string>
+    <string name="nt_menu_del">删除列表</string>
+    <string name="nt_menu_share">共享列表</string>
+</resources>

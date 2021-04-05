@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".jasleen.activities.NeedHelpActivity">
+
+    <View
+        android:id="@+id/need_MVW"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/help_back_BTN"
+        android:layout_width="@dimen/_22sdp"
+        android:layout_height="@dimen/_22sdp"
+        app:layout_constraintTop_toTopOf="@id/need_MVW"
+        app:layout_constraintStart_toStartOf="@id/need_MVW"
+        android:background="@drawable/ic_back_btn"
+        android:backgroundTint="@color/txt_clr1"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:onClick="onClickBackHelp"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/google_help_Tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/problem_in_logging_with_google"
+        app:layout_constraintTop_toBottomOf="@+id/help_back_BTN"
+        app:layout_constraintStart_toStartOf="@id/need_MVW"
+        app:layout_constraintEnd_toEndOf="@id/need_MVW"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="@color/txt_clr1"
+        android:typeface="sans"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/google_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/click_here"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="@color/txt_clr1"
+        android:typeface="sans"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/google_help_Tv"
+        app:layout_constraintStart_toStartOf="@id/google_help_Tv"
+        app:layout_constraintEnd_toEndOf="@id/google_help_Tv"
+        android:onClick="googleSignHelp"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/fb_help_Tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/problem_in_logging_with_facebook"
+        app:layout_constraintTop_toBottomOf="@id/google_help"
+        app:layout_constraintStart_toStartOf="@id/google_help"
+        app:layout_constraintEnd_toEndOf="@id/google_help"
+        android:textStyle="bold"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="@color/txt_clr1"
+        android:typeface="sans"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/fb_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/click_here"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="@color/txt_clr1"
+        android:typeface="sans"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/fb_help_Tv"
+        app:layout_constraintStart_toStartOf="@id/fb_help_Tv"
+        app:layout_constraintEnd_toEndOf="@id/fb_help_Tv"
+        android:onClick="fbSignInHelp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

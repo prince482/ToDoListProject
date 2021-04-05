@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <View
+        android:id="@+id/theme_View"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/Theme_Next_Btn"/>
+
+    <TextView
+        android:id="@+id/theme_Text_TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|center"
+        android:text="@string/themes"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20ssp"
+        app:layout_constraintEnd_toEndOf="@id/theme_View"
+        app:layout_constraintStart_toStartOf="@id/theme_View"
+        app:layout_constraintTop_toTopOf="@id/theme_View" />
+    <RadioGroup
+        android:id="@+id/theme_Radio_Group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@id/theme_View"
+        app:layout_constraintTop_toBottomOf="@id/theme_Text_TV"
+        app:layout_constraintBottom_toTopOf="@id/Theme_Next_Btn">
+        <RadioButton
+            android:id="@+id/RAdio_Btn_Dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="@string/dark_theme"
+            android:textSize="@dimen/_16ssp"
+            app:layout_constraintStart_toStartOf="@id/theme_Radio_Group"
+            app:layout_constraintTop_toTopOf="@id/theme_Radio_Group" />
+
+        <RadioButton
+            android:id="@+id/Radio_Btn_Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="@string/light_theme"
+            android:textSize="@dimen/_16ssp"
+            app:layout_constraintEnd_toEndOf="@id/RAdio_Btn_Dark"
+            app:layout_constraintStart_toStartOf="@id/RAdio_Btn_Dark"
+            app:layout_constraintTop_toBottomOf="@id/RAdio_Btn_Dark" />
+    </RadioGroup>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Theme_Next_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/theme_Radio_Group"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/next"
+        android:textSize="@dimen/_14ssp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/white"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:background="@drawable/bg_button"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/theme_skip_BTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/theme_Radio_Group"
+        app:layout_constraintEnd_toStartOf="@id/Theme_Next_Btn"
+        android:text="@string/skip"
+        android:textSize="@dimen/_14ssp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/white"
+        android:layout_marginEnd="@dimen/_35sdp"
+        android:background="@drawable/bg_button"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

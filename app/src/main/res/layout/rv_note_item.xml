@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:elevation="@dimen/_100sdp"
+    app:cardCornerRadius="@dimen/_6sdp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    android:id="@+id/card_view"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="@drawable/bg_cv_notes">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardView_CL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/note_title_TV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/note_menu_BTN"
+            android:text="Title Of the Note"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:typeface="sans"
+            android:textSize="@dimen/_14ssp"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/txt_clr1"
+            android:textStyle="bold|normal"
+            android:layout_margin="@dimen/_2sdp"/>
+
+        <LinearLayout
+            android:id="@+id/title_line_LL"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:orientation="horizontal"
+            android:background="#b2b2b2"
+            app:layout_constraintTop_toBottomOf="@id/note_title_TV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/note_imp_IB"
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:background="@drawable/ic_imp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:padding="@dimen/_5sdp"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/note_menu_BTN"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/note_menu_BTN"
+            android:layout_width="@dimen/_11sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:paddingBottom="@dimen/_10ssp"
+            android:backgroundTint="@color/txt_clr1"
+            android:background="@drawable/ic_menu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/note_body_TV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/title_line_LL"
+            app:layout_constraintStart_toStartOf="@id/note_title_TV"
+            app:layout_constraintEnd_toEndOf="@id/note_title_TV"
+            android:maxLines="5"
+            android:ellipsize="end"
+            android:text="dcsdbvgbsvhbsh bhg vd hsdbljhndvniu;sjdvnhjdb"
+            android:textStyle="normal"
+            android:textAlignment="viewStart"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:typeface="sans"
+            android:textSize="@dimen/_12ssp"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/txt_clr1"/>
+
+        <LinearLayout
+            android:id="@+id/time_line_LL"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:orientation="horizontal"
+            android:background="#b2b2b2"
+            app:layout_constraintTop_toBottomOf="@id/note_body_TV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/note_created_time_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/time_line_LL"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/txt_clr1"
+            android:textStyle="normal"
+            android:textAlignment="viewStart"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:typeface="sans"
+            android:textSize="@dimen/_11ssp"
+            android:padding="@dimen/_5sdp"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+</layout>

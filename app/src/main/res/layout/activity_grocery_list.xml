@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/grocery_CL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#bfffbf"
+        tools:context=".jasleen.activities.GroceryListActivity">
+
+        <View
+            android:id="@+id/grocery_main_VW"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <include
+            android:id="@+id/grocery_Tb"
+            layout="@layout/top_list_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp" />
+
+        <View
+            android:id="@+id/grocery_VW"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/bottm_nav_LL"
+            app:layout_constraintEnd_toEndOf="@id/grocery_main_VW"
+            app:layout_constraintStart_toStartOf="@id/grocery_main_VW"
+            app:layout_constraintTop_toBottomOf="@id/grocery_Tb" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/grocery_title_ET"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:background="@color/white"
+            android:hint="@string/title"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:singleLine="true"
+            android:textColor="@color/txt_clr1"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            app:layout_constraintEnd_toEndOf="@id/grocery_VW"
+            app:layout_constraintStart_toStartOf="@id/grocery_VW"
+            app:layout_constraintTop_toTopOf="@id/grocery_VW" />
+
+        <LinearLayout
+            android:id="@+id/title_space_LL"
+            android:layout_width="match_parent"
+            android:layout_height="1.7dp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:background="#F0F8FF"
+            android:elevation="2dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@id/veggie_left_IV"
+            app:layout_constraintStart_toStartOf="@id/grocery_VW"
+            app:layout_constraintTop_toBottomOf="@id/grocery_title_ET" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/veggie_left_IV"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:src="@drawable/ic_veg_top"
+            app:layout_constraintStart_toStartOf="@id/grocery_VW"
+            app:layout_constraintTop_toBottomOf="@id/grocery_title_ET" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/veggie_right_IV"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:src="@drawable/ic_veg_btm"
+            app:layout_constraintBottom_toTopOf="@id/grcry_change_LL"
+            app:layout_constraintEnd_toEndOf="@id/grocery_title_ET" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/grocery_body_ET"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            android:gravity="top"
+            android:hint="@string/start_listing"
+            android:imeOptions="actionDone"
+            android:nestedScrollingEnabled="true"
+            android:paddingStart="@dimen/_20sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:textColor="@color/txt_clr1"
+            android:textSize="@dimen/_12ssp"
+            android:typeface="sans"
+            app:layout_constraintBottom_toTopOf="@id/bottm_nav_LL"
+            app:layout_constraintEnd_toStartOf="@id/veggie_right_IV"
+            app:layout_constraintStart_toEndOf="@id/veggie_left_IV"
+            app:layout_constraintTop_toBottomOf="@id/grocery_title_ET" />
+
+        <LinearLayout
+            android:id="@+id/grcry_change_LL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_bottom_nav"
+            android:nestedScrollingEnabled="true"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:visibility="gone"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@id/bottm_nav_LL"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/grocery_body_ET">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/grcry_change_title_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/txt_clr1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/grcry_chnge_opt_1"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:src="@drawable/background_change_btn" />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/grcry_chnge_opt_2"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:src="@drawable/background_change_btn"
+                    android:tint="@color/txt_clr2"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/grcry_chnge_opt_3"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:src="@drawable/background_change_btn"
+                    android:tint="@color/txt_clr3"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/grcry_chnge_opt_4"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:src="@drawable/background_change_btn"
+                    android:tint="@color/txt_clr4"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/grcry_chnge_opt_5"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:src="@drawable/background_change_btn"
+                    android:tint="@color/txt_clr5"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/grcry_chnge_opt_6"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:src="@drawable/background_change_btn"
+                    android:tint="@color/txt_clr6"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bottm_nav_LL"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@drawable/background_bottom_nav"
+            android:elevation="@dimen/_100sdp"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_4sdp"
+            app:layout_constraintBottom_toBottomOf="@id/grocery_main_VW"
+            app:layout_constraintTop_toBottomOf="@id/grcry_change_LL"
+            app:layout_constraintStart_toStartOf="@id/grocery_main_VW">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/body_clr_change_BTN"
+                android:layout_width="@dimen/_22ssp"
+                android:layout_height="@dimen/_18ssp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:background="@drawable/change_title_color"
+                android:padding="@dimen/_5sdp"
+                app:layout_constraintEnd_toStartOf="@id/title_clr_change_BTN"
+                app:layout_constraintStart_toStartOf="@+id/bottm_nav_LL"
+                app:layout_constraintTop_toTopOf="@+id/bottm_nav_LL" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/title_clr_change_BTN"
+                android:layout_width="@dimen/_22ssp"
+                android:layout_height="@dimen/_18ssp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:background="@drawable/change_text_color"
+                android:padding="@dimen/_5sdp"
+                app:layout_constraintEnd_toStartOf="@id/body_txt_change_BTN"
+                app:layout_constraintStart_toEndOf="@+id/body_clr_change_BTN"
+                app:layout_constraintTop_toTopOf="@+id/bottm_nav_LL" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/body_txt_change_BTN"
+                android:layout_width="@dimen/_24ssp"
+                android:layout_height="@dimen/_20ssp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:background="@drawable/change_body_font"
+                android:padding="@dimen/_5sdp"
+                app:layout_constraintEnd_toStartOf="@id/grocery_voice_note_BTN"
+                app:layout_constraintStart_toEndOf="@+id/title_clr_change_BTN"
+                app:layout_constraintTop_toTopOf="@+id/bottm_nav_LL" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/grocery_voice_note_BTN"
+                android:layout_width="@dimen/_24ssp"
+                android:layout_height="@dimen/_20ssp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:background="@drawable/button_voice_notes"
+                android:padding="@dimen/_5sdp"
+                app:layout_constraintEnd_toEndOf="@id/bottm_nav_LL"
+                app:layout_constraintStart_toEndOf="@+id/body_txt_change_BTN"
+                app:layout_constraintTop_toTopOf="@+id/bottm_nav_LL" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+
+    <!--android:text="Flower, the characteristic Flower, the characteristic reproductive structure of angiosperms.As popularly used, the term “flower” especially applies when part or all of the reproductive structure is distinctive in colour and form.In their range of colour, size, form, and anatomical arrangement, flowers present a seemingly endless variety of combinations.They range in size from minute blossoms to giant blooms.Flower, the characteristic reproductive structure of angiosperms.As popularly used, the term “flower” especially applies when part or all of the reproductive structure is distinctive in colour and form.In their range of colour, size, form, and anatomical arrangement, flowers present a seemingly endless variety of combinations.They range in size from minute blossoms to giant blooms.reproductive structure of angiosperms.As popularly used, the term “flower” especially applies when part or all of the reproductive structure is distinctive in colour and form.In their range of colour, size, form, and anatomical arrangement, flowers present a seemingly endless variety of combinations.They range in size from minute blossoms to giant blooms."-->

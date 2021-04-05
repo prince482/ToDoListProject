@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Greek-->
+<resources>
+    <string name="app_name">ToDo List Project</string>
+    <string name="log_btn" >Σύνδεση</string>
+    <string name="new_title" >Δημιουργώ</string>
+    <string name="new_cancel" >Ματαίωση</string>
+    <string name="new_event">4. Εκδήλωση</string>
+    <string name="new_meeting">3. Πρόγραμμα συνάντησης</string>
+    <string name="new_grocery">2. Λίστα παντοπωλείων</string>
+    <string name="new_simple">1. Λίστα</string>
+    <string name="new_secret">5. Μυστική σημείωση</string>
+    <string name="dialog_title">Τίτλος</string>
+    <string name="error_message">Μήνυμα λάθους</string>
+    <string name="btn_ok">Εντάξει</string>
+    <string name="dialog_change_btn">Σειρά</string>
+    <string name="next">ΕΠΟΜΕΝΟ</string>
+    <string name="skip">ΠΑΡΑΛΕΙΠΩ</string>
+    <string name="got_it">ΤΟ ΕΠΙΑΣΑ</string>
+    <string name="get_started">Ξεκίνα</string>
+    <string name="check_it_out">Check It Out</string>
+    <string name="welcome">ΚΑΛΩΣ ΗΡΘΑΤΕ</string>
+    <string name="text1"><b>δουλειά να κάνουμε</b>είναι μια έξυπνη λίστα εργασιών για καθημερινή χρήση.</string>
+    <string name="text3">Εξασφαλίστε τη σαφήνεια και την ηρεμία βγάζοντας όλες αυτές τις εργασίες από το μυαλό σας και στη λίστα υποχρεώσεων (ανεξάρτητα από το πού βρίσκεστε ή ποια συσκευή χρησιμοποιείτε).</string>
+    <string name="text2"> Είναι πραγματικά χρησιμοποιήσιμο με εξαιρετική εμπειρία χρήστη. </string>
+    <string name="feature_text1"> Ομαδοποίηση εργασιών σε εύχρηστες λίστες εργασιών</string>
+    <string name="feature_text2"> Γρήγορη γραμμή εργασιών - για να προσθέσετε κάτι ζεστό γρήγορα</string>
+    <string name="feature_text3"> Προβολή ημερολογίου-Αποκτήστε μια καλύτερη προοπτική για το πόσο απασχολημένο είναι το πρόγραμμά σας με την προβολή ημερολογίου. </string>
+    <string name="feature_text4"> Χρωματική κωδικοποίηση. Αντιστοιχίστε χρώματα σε κάθε λίστα εργασιών για να διευκολύνετε τον προσδιορισμό των λιστών που βλέπετε
+Κάθε εργασία μπορεί να έχει λεπτομερείς σημειώσεις και πολλά άλλα......</string>
+    <string name="settings_text_select_theme">Επέλεξε θέμα:</string>
+    <string name="settings_text_credentials">Διαπιστευτήρια</string>
+    <string name="dark_theme">Σκούρο θέμα</string>
+    <string name="light_theme">Ελαφρύ θέμα</string>
+    <string name="ggle_sign_btn">Συνεχίστε με το google</string>
+    <string name="fb_sign_btn">Συνεχίστε με το Facebook</string>
+    <string name="log_help"><u>Χρειάζεστε βοήθεια?</u></string>
+    <string name="change_lang">Ρυθμίσεις γλώσσας</string>
+    <string name="username">Όνομα χρήστη</string>
+    <string name="settings">Ρυθμίσεις</string>
+    <string name="add_event">Προσθέστε ένα νέο συμβάν</string>
+    <string name="Save">Αποθηκεύσετε</string>
+    <string name="event_Hint">Εκδήλωση</string>
+    <string name="name">Ονομα:</string>
+    <string name="email">ΗΛΕΚΤΡΟΝΙΚΗ ΔΙΕΥΘΥΝΣΗ:</string>
+    <string name="id">ταυτότητα:</string>
+    <string name="title">Τίτλος</string>
+    <string name="user_profile">Προφίλ χρήστη</string>
+    <string name="themes">Θέματα</string>
+    <string name="log_out">Αποσύνδεση</string>
+    <string name="body">σώμα</string>
+    <string name="start_listing">Ξεκινήστε την καταχώριση...</string>
+    <string name="date">Ημερομηνία</string>
+    <string name="log_head">Σύνδεση</string>
+    <string name="log_wlcm">ΚΑΛΩΣ ΗΡΘΑΤΕ να Work To Do.</string>
+    <string name="user_verification">User Verification</string>
+    <string name="event_date">Ημερομηνία γεγονότος</string>
+    <string name="craetion_date">Σημερινή ημερομηνία</string>
+    <string name = "problem_in_logging_with_google"> Πρόβλημα κατά την σύνδεση με το Google; </string>
+    <string name = "click_here"><u>Κάντε κλικ εδώ</u></string>
+    <string name = "problem_in_logging_with_facebook"> Πρόβλημα κατά τη σύνδεση με το Facebook; </string>
+    <string name = "menu_imp">Σημαντικές σημειώσεις </string>
+    <string name = "menu_secret">Μυστικές σημειώσεις </string>
+    <string name = "nt_menu_imp">Επισήμανση ως σημαντικής λίστας </string>
+    <string name = "nt_menu_del">Διαγραφή λίστας </string>
+    <string name = "nt_menu_share">Κοινή χρήση λίστας </string>
+
+</resources>

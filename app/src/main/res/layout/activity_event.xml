@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/_10sdp"
+        tools:context=".jasleen.activities.EventActivity">
+        <include
+            android:id="@+id/event_list_TB"
+            layout="@layout/top_list_toolbar" />
+
+
+        <TextView
+            android:id="@+id/dialog_event_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:gravity="center"
+            android:text="@string/add_event"
+            android:textColor="@color/txt_clr1"
+            android:textSize="@dimen/_14ssp"
+            android:typeface="sans"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/event_list_TB" />
+
+        <DatePicker
+            android:id="@+id/Dialog_Showdate_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:gravity="center"
+            android:hint="Date"
+            android:textColorHint="@color/txt_clr1"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dialog_editevent_et" />
+
+        <EditText
+            android:id="@+id/dialog_editevent_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:hint="Event Name"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/txt_clr1"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dialog_event_tv" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

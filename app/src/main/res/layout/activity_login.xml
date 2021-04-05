@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:customprogress="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:orientation="horizontal">
+
+            <com.fevziomurtekin.customprogress.Dialog
+                android:id="@+id/progress"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                customprogress:durationTime="50"
+                android:layout_gravity="center"
+                android:outlineSpotShadowColor="#FFFFFF"
+                />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_Vw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/Login_Img"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_70sdp"
+            android:src="@drawable/ic_logo"
+            app:layout_constraintStart_toStartOf="@id/view_Vw"
+            app:layout_constraintTop_toTopOf="@id/view_Vw" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_14sdp"
+            android:elevation="@dimen/_100sdp"
+            android:text="@string/log_head"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_16sdp"
+            android:typeface="sans"
+            app:layout_constraintEnd_toEndOf="@+id/view_Vw"
+            app:layout_constraintTop_toTopOf="@+id/view_Vw" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/log_wlcm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_14ssp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:elevation="@dimen/_100sdp"
+            android:text="@string/log_wlcm"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            app:layout_constraintStart_toStartOf="@id/Login_Img"
+            app:layout_constraintTop_toBottomOf="@id/Login_Img" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ggl_sign_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginStart="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_70sdp"
+            android:layout_marginEnd="@dimen/_35sdp"
+            android:background="#ffffff"
+            android:backgroundTint="@color/white"
+            android:elevation="@dimen/_15sdp"
+            android:text="@string/ggle_sign_btn"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold"
+           android:textAlignment="center"
+            android:typeface="sans"
+            app:layout_constraintEnd_toEndOf="@id/view_Vw"
+            app:layout_constraintStart_toStartOf="@id/view_Vw"
+            app:layout_constraintTop_toBottomOf="@id/log_wlcm" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            app:layout_constraintTop_toTopOf="@id/ggl_sign_btn"
+            app:layout_constraintBottom_toBottomOf="@id/ggl_sign_btn"
+            app:layout_constraintStart_toStartOf="@id/ggl_sign_btn"
+            android:background="@drawable/ic_ggle_sign"
+            android:layout_marginStart="@dimen/_8sdp"/>
+
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/fb_sign_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_35sdp"
+            android:elevation="@dimen/_15sdp"
+            android:text="@string/fb_sign_btn"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@id/view_Vw"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/view_Vw"
+            app:layout_constraintTop_toBottomOf="@id/ggl_sign_btn" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_14ssp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:onClick="needHelp"
+            android:text="@string/log_help"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="normal"
+            android:typeface="sans"
+            app:layout_constraintStart_toStartOf="@id/view_Vw"
+            app:layout_constraintTop_toBottomOf="@id/fb_sign_btn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

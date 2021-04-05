@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_cv_notes"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/_15sdp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/new_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/txt_clr1"
+        android:padding="@dimen/_5ssp"
+        android:text="@string/new_title"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_15ssp"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/new_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:padding="@dimen/_5ssp"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingTop="@dimen/_2sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_2sdp"
+        android:text="@string/new_simple"
+        android:textAlignment="viewStart"
+        android:textColor="@color/txt_clr1"
+        android:textSize="@dimen/_13ssp"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="@id/new_title"
+        app:layout_constraintStart_toStartOf="@id/new_title"
+        app:layout_constraintTop_toBottomOf="@id/new_title" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/new_grocery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:padding="@dimen/_5ssp"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingTop="@dimen/_2sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_2sdp"
+        android:text="@string/new_grocery"
+        android:textAlignment="viewStart"
+        android:textColor="@color/txt_clr1"
+        android:textSize="@dimen/_13ssp"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="@id/new_note"
+        app:layout_constraintStart_toStartOf="@id/new_note"
+        app:layout_constraintTop_toBottomOf="@id/new_note" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/new_meeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:padding="@dimen/_5ssp"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingTop="@dimen/_2sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_2sdp"
+        android:text="@string/new_meeting"
+        android:textAlignment="viewStart"
+        android:textColor="@color/txt_clr1"
+        android:textSize="@dimen/_13ssp"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="@id/new_title"
+        app:layout_constraintStart_toStartOf="@id/new_grocery"
+        app:layout_constraintTop_toBottomOf="@id/new_grocery" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/new_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:padding="@dimen/_5ssp"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingTop="@dimen/_2sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_2sdp"
+        android:text="@string/new_event"
+        android:textAlignment="viewStart"
+        android:textColor="@color/txt_clr1"
+        android:textSize="@dimen/_12ssp"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="@id/new_meeting"
+        app:layout_constraintStart_toStartOf="@id/new_meeting"
+        app:layout_constraintTop_toBottomOf="@id/new_meeting" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/new_cancel"
+        android:layout_width="@dimen/_75sdp"
+        android:layout_height="@dimen/_42sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/bg_button"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/new_cancel"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/new_event" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

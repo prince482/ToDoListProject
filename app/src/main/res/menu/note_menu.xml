@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item app:showAsAction="never"
+        android:id="@+id/note_imp"
+        android:title="@string/nt_menu_imp"/>
+    <item app:showAsAction="never"
+        android:id="@+id/note_delete"
+        android:title="@string/nt_menu_del"/>
+    <item app:showAsAction="never"
+        android:id="@+id/share"
+        android:title="@string/nt_menu_share"/>
+
+</menu>

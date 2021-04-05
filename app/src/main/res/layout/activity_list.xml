@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/list_CL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/custom_list_TB"
+            layout="@layout/top_list_toolbar" />
+
+        <View
+            android:id="@+id/list_VW"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/custom_list_TB" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/list_title_ET"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/white"
+            android:hint="@string/title"
+            android:paddingStart="@dimen/_18sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:singleLine="true"
+            android:textColor="@color/txt_clr1"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            app:layout_constraintEnd_toEndOf="@id/list_VW"
+            app:layout_constraintStart_toStartOf="@id/list_VW"
+            app:layout_constraintTop_toTopOf="@id/list_VW" />
+
+        <LinearLayout
+            android:id="@+id/list_title_line_LL"
+            android:layout_width="match_parent"
+            android:layout_height="1.7dp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:background="#F0F8FF"
+            android:elevation="2dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@id/list_VW"
+            app:layout_constraintStart_toStartOf="@id/list_VW"
+            app:layout_constraintTop_toBottomOf="@id/list_title_ET" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/list_body_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            android:gravity="top"
+            android:hint="Start typing...."
+            android:paddingStart="@dimen/_18sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:textColor="@color/txt_clr1"
+            android:textSize="@dimen/_12ssp"
+            android:typeface="sans"
+            app:layout_constraintBottom_toTopOf="@+id/list_btm_CL"
+            app:layout_constraintEnd_toEndOf="@id/list_title_ET"
+            app:layout_constraintStart_toStartOf="@id/list_title_ET"
+            app:layout_constraintTop_toBottomOf="@id/list_title_ET" />
+
+        <LinearLayout
+            android:id="@+id/list_change_LL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_bottom_nav"
+            android:nestedScrollingEnabled="true"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:visibility="gone"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@id/list_btm_CL"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/list_body_text">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/change_title_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/txt_clr1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/chnge_opt_1"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:src="@drawable/background_change_btn" />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/chnge_opt_2"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:src="@drawable/background_change_btn"
+                    android:tint="@color/txt_clr2"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/chnge_opt_3"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:src="@drawable/background_change_btn"
+                    android:tint="@color/txt_clr3"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/chnge_opt_4"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:src="@drawable/background_change_btn"
+                    android:tint="@color/txt_clr4"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/chnge_opt_5"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:src="@drawable/background_change_btn"
+                    android:tint="@color/txt_clr5"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/chnge_opt_6"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:src="@drawable/background_change_btn"
+                    android:tint="@color/txt_clr6"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/list_btm_CL"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@drawable/background_bottom_nav"
+            android:elevation="@dimen/_100sdp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/list_change_LL">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/change_title_clr_BTN"
+                android:layout_width="@dimen/_22ssp"
+                android:layout_height="@dimen/_18ssp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:background="@drawable/change_title_color"
+                android:padding="@dimen/_5sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/change_text_clr_BTN"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/list_btm_CL" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/change_text_clr_BTN"
+                android:layout_width="@dimen/_22ssp"
+                android:layout_height="@dimen/_18ssp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:background="@drawable/change_text_color"
+                android:padding="@dimen/_5sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/change_text_font_BTN"
+                app:layout_constraintStart_toEndOf="@id/change_title_clr_BTN"
+                app:layout_constraintTop_toTopOf="@+id/list_btm_CL" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/change_text_font_BTN"
+                android:layout_width="@dimen/_24ssp"
+                android:layout_height="@dimen/_20ssp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:background="@drawable/change_body_font"
+                android:padding="@dimen/_5sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/voice_notes"
+                app:layout_constraintStart_toEndOf="@id/change_text_clr_BTN"
+                app:layout_constraintTop_toTopOf="@+id/list_btm_CL" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/voice_notes"
+                android:layout_width="@dimen/_24ssp"
+                android:layout_height="@dimen/_20ssp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:background="@drawable/button_voice_notes"
+                android:padding="@dimen/_5sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/list_btm_CL"
+                app:layout_constraintStart_toEndOf="@+id/change_text_font_BTN"
+                app:layout_constraintTop_toTopOf="@+id/list_btm_CL" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

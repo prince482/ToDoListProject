@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".jasleen.activities.OnClickPartSettingActivity">
+
+        <View
+            android:id="@+id/container_VW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/backClick_BTN"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            app:layout_constraintTop_toTopOf="@id/container_VW"
+            app:layout_constraintStart_toStartOf="@id/container_VW"
+            android:background="@drawable/ic_back_btn"
+            android:onClick="onBackClick"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/setting_type_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/backClick_BTN"
+            app:layout_constraintStart_toStartOf="@id/container_VW"
+            app:layout_constraintEnd_toEndOf="@id/container_VW"
+            android:text="Setting"
+            android:textColor="@color/txt_clr1"
+            android:typeface="sans"
+            android:textSize="@dimen/_30sdp"/>
+
+        <!--FOR USER PROFILE -->
+        <LinearLayout
+            android:id="@+id/user_LL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/setting_type_TV"
+            app:layout_constraintStart_toEndOf="@id/container_VW"
+            app:layout_constraintEnd_toEndOf="@id/container_VW"
+            android:visibility="visible">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/person_images"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:src="@drawable/ic_login_logo"
+                android:layout_gravity="center"
+                android:tint="@color/txt_clr1"
+                android:layout_marginTop="@dimen/_30sdp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/name_Tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name"
+                    android:textSize="@dimen/_16ssp"
+                    android:textColor="@color/txt_clr1"
+                    android:typeface="sans"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/personName_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/name_Tv"
+                    android:textColor="@color/txt_clr1"
+                    android:textSize="@dimen/_16ssp"
+                    android:typeface="sans"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/email_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email"
+                    android:textSize="@dimen/_16ssp"
+                    android:textColor="@color/txt_clr1"
+                    android:typeface="sans"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/personEmail_Tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/email_TV"
+                    android:textColor="@color/txt_clr1"
+                    android:textSize="@dimen/_16ssp"
+                    android:typeface="sans"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--SPANISH-->
+<resources>
+    <string name="app_name">ToDo List Project</string>
+    <string name="log_btn" >Iniciar sesión</string>
+    <string name="new_title" >Crear</string>
+    <string name="new_cancel" >Cancelar</string>
+    <string name="new_event">4. Evento</string>
+    <string name="new_meeting">3. Programar reunión</string>
+    <string name="new_grocery">2. Lista de compras</string>
+    <string name="new_simple">1. Lista</string>
+    <string name="new_secret">5. Nota secreta</string>
+    <string name="dialog_title">Título</string>
+    <string name="error_message">Error Message</string>
+    <string name="btn_ok">acuerdo</string>
+    <string name="dialog_change_btn">Establecer</string>
+    <string name="next">SIGUIENTE</string>
+    <string name="skip">SKIP</string>
+    <string name="got_it">GOT IT</string>
+    <string name="get_started">Get Started</string>
+    <string name="check_it_out">Check It Out</string>
+    <string name="welcome">BIENVENIDO</string>
+    <string name="text1"><b>Work To Do</b>es una lista de tareas inteligente para el uso diario.</string>
+    <string name="text3">Recupere la claridad y la calma al sacar todas esas tareas de su cabeza y colocarlas en su lista de tareas pendientes (sin importar dónde se encuentre o qué dispositivo use).</string>
+    <string name="text2">  Es realmente utilizable con una gran experiencia de usuario.</string>
+    <string name="feature_text1"> Agrupar tareas en prácticas listas de</string>
+    <string name="feature_text2"> Barra de tareas rápida: para agregar algo interesante rápidamente.</string>
+    <string name="feature_text3"> Vista de calendario: obtenga una mejor perspectiva de lo ocupada que está su agenda con la vista de calendario. </string>
+    <string name="feature_text4"> Codificación de colores. Asigne colores a cada lista de tareas para que sea más fácil identificar qué listas está viendo
+Cada tarea puede tener notas detalladas y muchas más .....</string>
+    <string name="settings_text_select_theme">Seleccionar tema:</string>
+    <string name="settings_text_credentials">Credenciales</string>
+    <string name="dark_theme">Tema oscuro</string>
+    <string name="light_theme">Tema ligero</string>
+    <string name="ggle_sign_btn">Continuar con google</string>
+    <string name="fb_sign_btn">Continuar con Facebook</string>
+    <string name="log_help"><u>¿Necesitas ayuda?</u></string>
+    <string name="change_lang">Configuración de idioma</string>
+    <string name="username">Nombre de usuario</string>
+    <string name="settings">Configuración</string>
+    <string name="add_event">Agregar un nuevo evento</string>
+    <string name="Save">SavGuardare</string>
+    <string name="event_Hint">Evento</string>
+    <string name="name">Nombre:</string>
+    <string name="email">Correo electrónico::</string>
+    <string name="id">id:</string>
+    <string name="title">Título</string>
+    <string name="user_profile">Perfil de usuario</string>
+    <string name="themes">Temas</string>
+    <string name="log_out">Cerrar sesión</string>
+    <string name = "body"> cuerpo </string>
+    <string name = "start_listing"> Iniciar listado … </string>
+    <string name = "date"> Fecha </string>
+    <string name = "log_head"> Iniciar sesión </string>
+    <string name = "log_wlcm"> Bienvenido a Work To Do. </string>
+    <string name="user_verification">User Verification</string>
+    <string name="event_date">Fecha del evento</string>
+    <string name="craetion_date">Fecha actual</string>
+    <string name = "problem_in_logging_with_google">Problemo en ensaluti kun Google? </string>
+    <string name = "click_here"><u>Alklaku Ĉi tie</u></string>
+    <string name = "problem_in_logging_with_facebook">Problemo en ensaluti kun Facebook? </string>
+    <string name = "menu_imp">Notas importantes </string>
+    <string name = "menu_secret">Notas secretas </string>
+    <string name = "nt_menu_imp">Marcar como lista importante </string>
+    <string name = "nt_menu_del">Eliminar lista </string>
+    <string name = "nt_menu_share">Lista para compartir </string>
+</resources>

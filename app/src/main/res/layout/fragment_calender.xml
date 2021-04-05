@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.events.calendar.views.EventsCalendar
+            android:layout_marginTop="@dimen/_10sdp"
+            android:id="@+id/eventsCalendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:overScrollMode="never"
+            app:datesTextSize="16sp"
+            app:eventDotColor="#ff0000"
+            app:isBoldTextOnSelectionEnabled="true"
+            app:monthTitleColor="@color/txt_clr1"
+            app:monthTitleTextSize="16sp"
+            app:primaryTextColor="@color/txt_clr1"
+            app:secondaryTextColor="#666666"
+            app:selectedTextColor="#ffe600"
+            app:selectionColor="#A6C8E3"
+            app:weekHeaderColor="#A67C7C"
+            app:rangeSelectionColor="#ffe600"
+            app:rangeSelectionStartColor="#c1ae01"
+            app:rangeSelectionEndColor="#c1ae01"
+            app:weekHeaderTextSize="16sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/calender_RecyclerView"/>
+
+        <TextView
+            android:id="@+id/selected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            app:layout_constraintTop_toBottomOf="@id/eventsCalendar"
+            app:layout_constraintStart_toStartOf="@id/eventsCalendar"
+            android:paddingStart="15dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="10dp"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:visibility="gone"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/calender_RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="@id/eventsCalendar"
+            app:layout_constraintTop_toBottomOf="@id/eventsCalendar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:nestedScrollingEnabled="true"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

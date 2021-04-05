@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".jasleen.activities.HomeLandingActivity"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+         <include
+             android:id="@+id/home_TB"
+             layout="@layout/toolbar_home"
+             android:elevation="@dimen/_100sdp"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/_40sdp" />
+        <View
+            android:id="@+id/home_VW"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/home_TB"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/bottom_nv_LL"/>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/fragment_VP"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            app:layout_constraintTop_toTopOf="@id/home_VW"
+            app:layout_constraintStart_toStartOf="@id/home_VW"
+            app:layout_constraintEnd_toEndOf="@id/home_VW"
+            app:layout_constraintBottom_toTopOf="@id/bottom_nv_LL"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_38sdp"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:src="@drawable/ic_new_task"
+            android:background="@drawable/bg_round"
+            app:maxImageSize="@dimen/_40sdp"
+            android:padding="@dimen/_2sdp"
+            app:layout_constraintBottom_toTopOf="@id/bottom_nv_LL"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:elevation="@dimen/_10sdp"
+            android:onClick="openNewTaskOptions"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bottom_nv_LL"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_36sdp"
+            android:background="#f4f4f4"
+            android:backgroundTint="@color/background_clr"
+            android:elevation="@dimen/_100sdp"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:paddingStart="@dimen/_5sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/home_IV"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@drawable/ic_home"
+                android:elevation="@dimen/_10sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/calender_IV"
+                android:onClick="onClickHomeButton"/>
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/calender_IV"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@drawable/ic_calendar"
+                android:elevation="@dimen/_10sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/home_IV"
+                app:layout_constraintEnd_toStartOf="@id/quick_IV"
+                app:layout_constraintTop_toTopOf="parent"
+                android:onClick="onCalenderButtonClick"/>
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/quick_IV"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@drawable/ic_quick_note"
+                android:elevation="@dimen/_10sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/calender_IV"
+                app:layout_constraintEnd_toEndOf="@id/setting_IV"
+                android:onClick="bttmQuickNote"/>
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/setting_IV"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@drawable/ic_settings"
+                android:elevation="@dimen/_10sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/quick_IV"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                android:onClick="openSettings"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:paddingBottom="@dimen/_10sdp"
+    android:paddingEnd="@dimen/_10sdp"
+    android:paddingStart="@dimen/_10sdp"
+    android:background="@drawable/bg_cv_notes"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/Event_head_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:elevation="@dimen/_10sdp"
+        android:text="@string/event_Hint"
+        android:textColor="@color/txt_clr1"
+        android:textSize="@dimen/_12ssp"
+        android:typeface="sans"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Event_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:elevation="@dimen/_10sdp"
+        android:textColor="@color/txt_clr1"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintStart_toEndOf="@id/Event_head_tv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Date_head_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_10sdp"
+        android:text="@string/event_date"
+        android:textSize="@dimen/_12ssp"
+        android:typeface="sans"
+        android:textColor="@color/txt_clr1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Event_tv"
+        android:layout_marginTop="@dimen/_10sdp"/>
+    <TextView
+        android:id="@+id/Date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:elevation="@dimen/_10sdp"
+        android:textColor="@color/txt_clr1"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintStart_toEndOf="@id/Date_head_tv"
+        app:layout_constraintTop_toBottomOf="@id/Event_tv" />
+
+    <TextView
+        android:id="@+id/current_head_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_10sdp"
+        android:text="@string/craetion_date"
+        android:textSize="@dimen/_12ssp"
+        android:typeface="sans"
+        android:textColor="@color/txt_clr1"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Date_tv" />
+    <TextView
+        android:id="@+id/current_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_10sdp"
+        android:textSize="@dimen/_12ssp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:typeface="sans"
+        android:textColor="@color/txt_clr1"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/current_head_date"
+        app:layout_constraintTop_toBottomOf="@id/Date_tv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

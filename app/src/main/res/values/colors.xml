@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#333399</color>
+    <color name="teal">#FF03DAC5</color>
+    <color name="teal_700">#44A08D</color>
+    <color name="black">#FFFFFF</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="log_hint">#868688</color>
+    <color name="text_color_sample">#333399</color>
+    <color name="navgigtion">#d6ffd6</color>
+    <color name="background_clr">#093637</color>
+
+    <!--    background color for notes-->
+    <color name="bg_clr1">#99ff99</color>
+    <color name="bg_clr2">#abffff</color>
+    <color name="bg_clr3">#ffd9d9</color>
+    <color name="bg_clr4">#fff0b2</color>
+    <color name="bg_clr5">#e8baff</color>
+    <color name="bg_clr6">#d9bfd9</color>
+    <color name="bg_clr7">#d1d1ba</color>
+    <color name="bg_clr8">#ffba8c</color>
+
+
+    <!--    text and title color for notes-->
+    <color name="txt_clr1">#093637</color>
+    <color name="txt_clr2">#000000</color>
+    <color name="txt_clr3">#FF0000</color>
+    <color name="txt_clr4">#4B0082</color>
+    <color name="txt_clr5">#FF7F00</color>
+    <color name="txt_clr6">#660033</color>
+
+    <color name="text_color">#333399</color>
+    <color name="example_3_black">#D9000000</color>
+    <color name="example_3_white">#D9FFFFFF</color>
+    <color name="example_3_blue">#1973E8</color>
+    <color name="example_3_blue_light">#D2E3FC</color>
+    <color name="example_3_toolbar_color">#607D8B</color>
+    <color name="example_3_statusbar_color">#455A64</color>
+
+</resources>

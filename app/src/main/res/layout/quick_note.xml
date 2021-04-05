@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ebd699"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/quick_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:textColorHint="#f7f0d9"
+            android:textStyle="italic"
+            android:fontFamily="@font/montserrat_medium"
+            android:textSize="@dimen/_20ssp"
+            android:padding="@dimen/_5sdp"
+            android:background="@drawable/header_quick_note"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/quick_body"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:textColorHint="#faf5e6"
+            android:textStyle="normal"
+            android:fontFamily="@font/montserrat_medium"
+            android:background="#ebd699"
+            android:textSize="@dimen/_14ssp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingStart="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_8sdp"
+            android:gravity="top"
+            app:layout_constraintBottom_toTopOf="@id/quick_cancel"
+            app:layout_constraintTop_toBottomOf="@id/quick_title"
+            app:layout_constraintStart_toStartOf="@id/quick_title"
+            app:layout_constraintEnd_toEndOf="@id/quick_title"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/quick_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@color/txt_clr1"
+            android:text="@string/btn_ok"
+            android:padding="@dimen/_5sdp"
+            android:textSize="@dimen/_14ssp"
+            android:layout_gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/quick_body"
+            app:layout_constraintEnd_toEndOf="@id/quick_body"
+            android:background="@drawable/header_quick_note"
+            android:textAlignment="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/quick_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20sdp"
+            app:layout_constraintTop_toBottomOf="@id/quick_body"
+            app:layout_constraintEnd_toStartOf="@id/quick_done"
+            android:textStyle="bold|italic"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@color/txt_clr1"
+            android:text="@string/new_cancel"
+            android:background="@drawable/header_quick_note"
+            android:textSize="@dimen/_14ssp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_gravity="center"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</ScrollView>

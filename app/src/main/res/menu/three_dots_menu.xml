@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item app:showAsAction="never"
+        android:id="@+id/imp_notes"
+        android:title="@string/menu_imp"/>
+    <item app:showAsAction="never"
+        android:id="@+id/s_notes"
+        android:title="@string/menu_secret"/>
+    <item app:showAsAction="never"
+        android:id="@+id/log_out"
+        android:title="@string/log_out"/>
+
+</menu>
